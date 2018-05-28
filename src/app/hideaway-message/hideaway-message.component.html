@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		{{title}}
+		<button (click)="hideContent($event)" style="float: right"> {{ btnText }} </button>
+	</div>
+	<div class="panel-body" *ngIf="!hidden">
+		{{content}}
+	</div>
+</div>
